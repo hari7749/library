@@ -1,0 +1,29 @@
+.TopNavIcons{
+    border-right: 1px solid;
+    border-left: 1px solid;
+    max-width: 33%;
+    margin-top: 3%;
+
+}
+.TopNavHomeLable{
+    max-width: 8%;
+    margin-left: 50%;
+}
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

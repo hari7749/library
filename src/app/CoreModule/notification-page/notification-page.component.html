@@ -1,0 +1,43 @@
+<topnavbar></topnavbar>
+<h1 class="text-center"style="margin:25px;">Notifications</h1>
+<div class="row">
+  <div class="col-10">
+      <div class="card" style="margin-left:15px; border-radius:10px;   background: linear-gradient(to right, #232526, #414345);">
+          <label for="email" style="margin:5px; color:white;"><strong>Write Post</strong></label>
+          <form class="form-inline" action="/action_page.php" style="margin:15px" >
+            <div class="form-group col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Write Post" style="width:100%">
+            </div>
+            <button type="submit" class="btn btn-danger col-sm-2" style="color:whitesmoke;">Post</button>
+          </form>
+          <br>
+          </div>
+          <br>
+
+      
+              <div class="card" style="margin-left:15px;">
+                <div class="row col-10">
+                    <label style="margin:5px; color:black"><strong>NotifiCatins</strong></label>
+                  </div>
+                <hr>
+                <div class="row col-10" style="margin-left:60px;" *ngFor="let posts of generalpost">
+                    <img src="../../../assets/Images/{{posts.logo}}.jpg" width="100" height="45">
+                    <p class="status">{{posts.companyName}}</p>
+                  <p class="status">{{posts.postDescription}}</p>
+                </div>
+              </div>
+          
+         
+             
+           
+  </div>
+
+
+
+
+
+
+  
+  <div class="col-2">
+     
+</div>

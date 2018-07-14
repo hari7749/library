@@ -1,0 +1,221 @@
+<topnavbar></topnavbar>
+
+<div class="container-fluid cover " style="margin-top:10px;">
+  <div class="row ">
+    <div class="col-md-12">
+      <img src="{{BannerPhoto}}" width=100% height="400px">
+    </div>
+  </div>
+
+
+  <div class="container rowblock">
+    <div class="row">
+      <div class="col-md-6  card cardbox">
+        <div class="row">
+          <div class=" col-md-4  hidden-sm hidden-xs">
+            <img src="../../assets/Images/ola.png" width="100" height="45">
+          </div>
+          <div class="col-md-offset-7 col-md-5 social">
+
+            <a href=" https://www.facebook.com/moshimoshimedia/" class="fa fa-facebook"></a>
+            <a href=" https://www.instagram.com/moshimoshimedia/" class="fa fa-instagram"></a>
+
+            <a href="https://www.linkedin.com/company/moshimoshimedia/" class="fa fa-linkedin"></a>
+            <a href=" https://www.youtube.com/channel/UCxHbhytM2EyobFlf01o4CTw" class="fa fa-youtube"></a>
+            <a href=" https://dribbble.com/MoshiMoshiMedia" class="fa fa-dribbble"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-4 col-md-8" *ngFor="let pos of posts">
+            <p class="para">{{pos.description}}</p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <strong>sector:</strong>
+          </div>
+          <div class="col-md-8 para cardspace" *ngFor="let pos of posts">
+              {{pos.sectorName}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 cardspace">
+            <strong>Area of operation:</strong>
+          </div>
+          <div class="col-md-8 para cardspace" *ngFor="let pos of posts">
+              {{pos.areaOfOperation}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 cardspace">
+            <strong>Age group:</strong>
+          </div>
+          <div class="col-md-8 para cardspace" *ngFor="let pos of posts">
+              {{pos.ageGroup}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 cardspace">
+            <strong>Gender:</strong>
+          </div>
+          <div class="col-md-8 para cardspace"  *ngFor="let pos of posts">
+              {{pos.genderName}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 cardspace">
+            <strong>Occupation:</strong>
+          </div>
+          <div class="col-md-8 para cardspace" *ngFor="let pos of posts">
+              {{pos.occupation}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 cardspace">
+            <strong>Segment:</strong>
+          </div>
+          <div class="col-md-8 para cardspace" *ngFor="let pos of posts">
+              {{pos.segment}}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-offset-1 col-md-5 card cardbox2"  style="margin-left:80px;">
+        <div class="row connect">
+          <div class="col-md-12">
+            <strong>Connect</strong>
+          </div>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="para cardspace">Using the below form you can connect with companies in various aspects of business</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+
+            <p class="para border">
+              <select class="form-control" id="myList">
+                <option disabled> Reason for connect</option>
+                <option value="1">cross promotion</option>
+                <option value="2">supply chain</option>
+                <option value="3">design</option>
+                <option value="4">other</option>
+              </select>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 border message">
+
+            <form>
+              <div class="form-group">
+
+                <textarea rows="5" cols="30" placeholder="300 words description" [(ngModel)]="connect.Description"></textarea>
+              </div>
+            </form>
+            <!-- <textarea  class="" rows="5" placeholder="300 word description"></textarea> -->
+
+            <!-- <textarea  class="form-control inputbox" cols="26" rows="4" placeholder=" 300 word description" name="worddesc" #brandname="ngModel" required [(ngModel)]="worddesc"></textarea> -->
+
+          </div>
+        </div>
+        <div class="row">
+          <button type="button" class="btn buton" (click)="ReasonForConnect()">Connect</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 card cardbox1">
+        <div class="row">
+          <div class="col-md-3">
+            <strong>Status</strong>
+          </div>
+        </div>
+
+        <hr>
+        <div class="row" *ngFor="let pos of posts">
+          <p class="status">{{pos.status}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6 card cardbox1">
+          <div class="row">
+            <div class="col-md-3">
+              <strong>suggestions</strong>
+            </div>
+          </div>
+  
+          <hr>
+          <div class="row" *ngFor="let sug of suggestion">
+            <p class="status">{{sug.description}}</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 card cardbox1">
+            <div class="row">
+              <div class="col-md-3">
+                <strong>General Posts</strong>
+              </div>
+            </div>
+    
+            <hr>
+            <div class="row" *ngFor="let posts of generalpost">
+              <p class="status">{{posts.postDescription}}</p>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+
+
+
+
+
+
+  <p class="text-center">
+    <strong>Similar companies you can connect to</strong>
+  </p>
+
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-2">
+        <img src="../../assets/Images/ola.png" width="100" height="45">
+      </div>
+      <div class="col-md-2">
+        <img src="../../assets/Images/ola.png" width="100" height="45">
+      </div>
+      <div class="col-md-2">
+        <img src="../../assets/Images/ola.png" width="100" height="45">
+      </div>
+      <div class="col-md-2">
+        <img src="../../assets/Images/ola.png" width="100" height="45">
+      </div>
+      <div class="col-md-2">
+        <img src="../../assets/Images/ola.png" width="100" height="45">
+      </div>
+      <div class="col-md-2">
+        <img src="../../assets/Images/ola.png" width="100" height="45">
+      </div>
+    </div>
+  </div>
+</div>

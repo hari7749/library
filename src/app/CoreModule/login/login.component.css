@@ -1,0 +1,482 @@
+
+.home{
+	background-repeat: no-repeat;
+  
+    background-size: cover;
+}
+ .home .navbar-toggler
+{
+	position:absolute;
+	right:20px;
+	top:10px;
+	
+}	  
+.LogoImageClass{
+	margin-left: 45%;
+    margin-bottom: 0%;
+    margin-top: 45%;
+}
+.menu{
+	width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+.menu1{
+	width: 13px;
+    height: 3px;
+    background-color:#FF5B33;
+    margin: 3px 0;
+}
+.terms{
+	font-size:11px;
+	padding-top:20px;
+	color:gray;
+}
+.hole{
+	margin-top:-40px;
+	padding-left:60px;
+	color:black;
+}
+.bgcolor
+{
+	background-color:white;
+	height:580px;
+}
+.para{
+    width: 92%;
+	padding:30px;
+	
+}
+.whole{
+	font-weight:light;
+	
+	
+}
+.color1{
+	background-color:#FF5B33;
+		border:1px solid #FF5B33;
+}
+.orange
+{
+	color:#FF5B33;
+}
+#inputUserName{
+	width:140px;
+	
+}
+#inputUserPassword{
+	width:140px;
+}
+.buut1{
+	width:160px;
+	font-size:18px;
+	background-color:#FF5B33;
+	border:1px solid #FF5B33;
+	height:40px;
+	
+}
+.form1{
+	padding-top:0px;
+}
+
+.email{
+	padding-bottom: 26px;
+}
+.main{
+	background-image: url("../../../assets/images/BlackHoleLoginImage.jpg");
+	background-repeat: no-repeat;
+    height:580px;
+	background-size:  898px 583px;
+	   
+}
+/* 
+.footermain{
+	padding-top:20px;
+   } */
+
+
+
+
+
+
+
+/*chat*/
+
+ .chatbox{
+	width:100%;
+	
+	height:600px;
+	
+	padding:25px;
+	
+	
+}
+
+.chatlogs
+{
+	
+	padding:20px;
+	width:100%;
+	height:450px;
+	background:#fbfbfb;
+	border-bottom:1px solid #e6e6e6;
+	border-top:1px solid #e6e6e6;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.chat{
+	display:flex;
+	flex-flow:row wrap;
+	align-items:flex-start;
+	margin-bottom:10px;
+}
+.chat .user-photo{
+	width:30px;
+	height:30px;
+	background:#ccc;
+	border-radius:50%;
+	overflow:hidden;
+}
+.chat .user-photo img{
+	width:100%;
+}
+.chat .chat-message{
+	width:60%;
+	padding:15px;
+	margin:5px 10px 0;
+	
+    
+	color:#fff;
+	font-size:12px;
+	
+}
+.friend .chat-message{
+	background:#bfbfbf;
+	width:300px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.self .chat-message{
+	padding-left:50px;
+	width:500px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background:#FF5B33;
+	order:-1;
+}
+.chat-form{
+	margin-top:20px;
+	display:flex;
+	align-items:flex-start;
+}
+.chat-form textarea{
+	background:#fbfbfb;
+	width:75%;
+	height:50px;
+	border:2px solid #eee;
+	border-radius:3px;
+	resize:none;
+	padding:10px;
+	font-size:18px;
+	color:#333;
+}	
+.chat-form textarea:focus{
+	background:#fff;
+}
+.textar{
+	padding:20px;
+}
+.textar button{
+	background:#FF5B33;
+	padding:5px 15px;
+	font-size:16px;
+	border:none;
+	color:#fff;
+	margin:0 10px;
+	border-radius:3px;
+	height:40px;
+	width:100px;
+	float:right;
+	
+	
+}
+.smile{
+	float:right;
+}
+#smi{
+
+	
+}
+textarea{
+	width:300px;
+	height:70px;
+} 
+
+
+
+
+/*ex */
+.ex{
+	
+	background-repeat: no-repeat;
+	  height:850px;
+	   background-size:  cover;
+	   padding-top:20px;
+	  
+}
+	
+.lin1{
+	float:right;
+	padding:10px;
+	margin-top:5px;
+}
+.lin2{
+	float:right;
+	padding:10px;
+}
+.lin3{
+	float:right;
+	padding:10px;
+}
+.bgcolor1
+{
+	background-color:white;
+	height:800px;
+}
+ .links1 {
+	list-style:none;
+	border-right:1px solid;
+	/* height:40px; */
+	color:gray;
+	
+	
+	
+	
+}
+
+.links4{
+	list-style:none;
+	border-right:1px solid;
+	/* height:40px; */
+	
+}
+.black{
+	color:black;
+	
+	padding-left:80px;
+}
+.lin1{
+	padding:5px;
+}
+.ex .nav{
+	float:right;
+	
+	
+}
+.ex .navbar{
+	border-bottom:8px solid #bfbfbf;
+	
+padding-bottom:10px;
+	
+}
+.ex li{
+	display:inline-block;
+	
+}
+.ola{
+	
+	padding-left:10px;
+}
+.ola1{
+	
+	padding-left:10px;
+	margin-top:-20px;
+}
+.ex .glyphicon{
+	font-size:20px;
+}
+.ex .navbar-toggler
+{
+	
+	background: transparent;
+    border: none;
+	padding:10px;
+	
+}
+	
+	
+	
+	
+
+.ex .menu{
+	width: 10px;
+    height: 2px;
+  border:2px solid blcak;
+    margin: 2px 0;
+}
+.ex .menu1{
+	width: 8px;
+    height: 1px;
+   
+    margin: 2px 0;
+	border:1px solid #FF5B33;
+}
+.links1{
+	font-size:18px;
+	
+}
+.ex .glyphicon{
+
+	color:black;
+}
+.icon1{
+	color:#FF5B33;
+	float:right;
+	padding-right:40px;
+	
+}
+#arrow{
+	padding-left:20px;
+	color:#66ffff;
+	
+}
+
+.act{
+	
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.p1{
+	padding:20px;
+	background-color:#f5f5f0;
+	width:368px;
+	margin-top:20px;
+	border-top:1px solid   #e6e6e6;
+	border-bottom:1px solid  #e6e6e6;
+	color:gray;
+}
+ 
+ .chat-list li {
+  display: block;
+  padding: 20px 10px;
+  clear: both;
+  cursor: pointer;
+ 
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+ .chat-list li .avatar {
+  margin-right: 12px;
+  float: left;
+}
+ .chat-list li .avatar img {
+  width: 60px;
+  height: auto;
+  border: 4px solid transparent;
+  margin-top:-10px;
+  margin-left:-50px;
+}
+
+ 
+ .chat-list li .body .header {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+ .chat-list li .body .header .username {
+  font-weight: bold;
+  color:gray;
+}
+ .chat-list li .body .header .username1 {
+  font-weight: bold;
+  color:black;
+}
+ .chat-list li .body .header .timestamp {
+  float: right;
+  color: #999;
+  font-size: 11px;
+  line-height: 18px;
+  font-style: italic;
+}
+.chat-list li .body .header .timestamp1 {
+  float: right;
+  color:#66ffff;
+  font-size: 11px;
+  line-height: 18px;
+  font-style: italic;
+}
+
+
+.footer {
+	border-top:8px solid #bfbfbf;
+   margin-left:-30PX;
+    background-color: black;
+  
+	color:white;
+}
+/* .footerex{
+	border-top:8px solid #bfbfbf;
+   margin-left:-30PX;
+    background-color: black;
+  margin-top:-55px;
+	color:white;
+} */
+
+/*friend request*/
+.sss{
+	 
+ text-align:center;
+    height: 90px;
+    width: 90px;
+    font-size:80px;
+	padding:25px,20px;
+	border-radius:50%;
+	background-color:#3399ff;
+	
+ 
+}
+.subject{
+	background-color:#ddd;
+	color:black;
+	padding:5px;
+	border-radius:10px;
+	
+}
+.last{
+	margin-top:10px;
+	padding-top:30px;
+	border:1px solid gray;
+	padding-bottom:30px;
+	margin-left:-10px;
+	
+}
+.reject{
+	margin-top:20px;
+	margin-left:-40px;
+	background-color:#FF5B33;
+	border:1px solid transparent;
+}
+
+.reject1{
+	width:100px;
+	    margin-top: 13px;
+		margin-left:-40px;
+		background-color:#FF5B33;
+		border:1px solid transparent;
+}
+.gray{
+	color:gray;
+	
+}
+
+.abt1{
+	color:black;
+}
+
+.forgot{    margin-left: 52%;
+}

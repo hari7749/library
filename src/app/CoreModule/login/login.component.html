@@ -1,0 +1,62 @@
+<div class="home">
+    <div class="container-fluid">
+        <!-- <app-header></app-header> -->
+    <div class="row" >
+    
+      <div class="col-md-4 col-sm-12 col-xs-12 bgcolor ">
+      <div class="row">
+        <div>
+          <img class="LogoImageClass" width="130" height="60" alt="Black Hole Logo" src="../../../assets/Images/Blackholee.png">
+        </div>
+      </div>
+     <div class="para">
+     <h4 class="text-justify text-center"><span class="whole"><span class="orange">10,000</span> Businesses are getting connected everyday using the blackhole.Sign Up today.</span></h4>     
+     <div class="box">
+     <form class="form1">
+     <div class="  form-group " >
+     <input type="text" class="form-control inputbox" [(ngModel)]="company.CompanyName" placeholder="Company Name*" name="CompanyName"  required pattern="^[a-zA-Z\s]*" required>     </div>     
+     <div class="form-group">
+     <input type="text" class="form-control inputbox" [(ngModel)]="company.EmailID" placeholder="Official Email ID*" name="OfficialEmailID" required pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/"  required>
+    </div>
+     <div class="form-group">    
+     <input type="password" class="form-control inputbox" [(ngModel)]="company.Password" placeholder="New Password*" name="newpassword" required>    
+    </div>
+     <div class="form-group">
+       
+        <input type="password" class="form-control inputbox" [(ngModel)]="CompanyConfirmPassword" placeholder="Confirm Password*" name="conpassword" required>
+  
+      </div>
+     <div>
+     <p class="terms"><b>By clicking Sign Up, you are agree to our <span class="orange">Terms,Data Policy  </span> and <span class="orange">  Cookie Policy.</span>You may recieve SMS notifications from us and can opt out at any time.</b></p>     
+     </div>
+      <button type="submit" (click)="SignUpCompany()" class="btn btn-primary buut1">Sign Up</button>
+    </form>
+     </div>
+     </div>   
+     </div>
+
+     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 main">  
+       <div class="row" style="margin-left: 15%;margin-top: 5%;">
+          <div class="form-group col-lg-4">
+              <!-- <input type="email" [(ngModel)]="appUsers.UserName" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Email address" required="" autofocus=""> -->
+              <input type="text" class="form-control inputbox" [(ngModel)]="Users.UserName" name="email" placeholder="Email ID*" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"   required>
+             
+            </div>
+
+        <div class="col-lg-4 form-group">
+        <input  type="password" class="form-control inputbox" [(ngModel)]="Users.Password" name="password" placeholder="Password"  required pattern="^[a-z0-9_-]{4,15}$"  required>  
+       
+              </div>
+              <div class="col-md-1 col-lg-2 form-group">
+                  <button type="submit" (click)="dologin($event)" class="btn btn-primary buut1">Log in</button>
+                </div>
+       </div>
+       <div class="row" style="margin-left: 15%;color: aliceblue;">
+          <p class="forgot"  (click)="gotoreset()">ForgotPassword?</p>
+        </div>
+    </div>
+    </div>
+    
+    </div>
+    </div> 
+  

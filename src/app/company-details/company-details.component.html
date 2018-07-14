@@ -1,0 +1,229 @@
+<div class="form" >
+<div class="container">
+    <h3 class="text-center"style="margin:25px">CompanyDetails </h3>
+  <div class="col-sm-2"></div>
+  <div class="card" style="background: #e6e6e6;">
+  <div class="row" style="margin-top: 40px">
+    <div class="col-sm-5" style="margin-left: 91px">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control formTextbox" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="companydetails.EmailID">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label>Company Name:
+          <span class="star">*</span>
+        </label>
+
+        <input type="text" class="form-control formTextbox"  required pattern="^[a-zA-Z\s]*" required  [(ngModel)]="companydetails.CompanyName">
+        <!-- <div [hidden]="companydetails.companyName.valid || companydetails.companyName.untouched">
+          <div *ngIf="companydetails.companyName.errors && companydetails.companyName.errors.required" class="alert alert-danger error">
+            please enter company name.
+          </div>
+
+          <div *ngIf="companydetails.companyName.errors && companydetails.companyName.errors.pattern" class="alert alert-danger error">
+            only alphabets.
+          </div>
+        </div> -->
+      </div>
+
+
+      <div class="form-group">
+        <label>Description
+          <span class="star">*</span>
+        </label>
+        <textarea class="form-control formTextbox" rows="5" name="company sector" required pattern="^[a-zA-Z\s]*"  [(ngModel)]="companydetails.Description" required ></textarea>
+        <!-- <div [hidden]="description.valid || description.untouched">
+          <div *ngIf="description.errors && description.errors.required" class="alert alert-danger error">
+            please enter Description.
+          </div>
+
+          <div *ngIf="description.errors && description.errors.required" class="alert alert-danger error">
+            Description validated.
+          </div>
+        </div> -->
+      </div>
+
+
+      <div class="form-group">
+        <label>Website</label>
+        <textarea class="form-control formTextbox" rows="5" name="website"  [(ngModel)]="companydetails.Website" required pattern="^[a-zA-Z\s]*" required></textarea>
+        <!-- <div [hidden]="website.valid || website.untouched">
+          <div *ngIf="website.errors && website.errors.required" class="alert alert-danger error">
+            please enter website.
+          </div>
+
+          <div *ngIf="description.errors && description.errors.required" class="alert alert-danger error">
+            website validated.
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+    <div class="col-sm-5">
+
+      <div class="form-group">
+        <label>Social Media Link
+          <span class="star">*</span>
+        </label>
+        <input type="text" class="form-control formTextbox" name="socialMedia"  required pattern="^[a-zA-Z\s]*" required>
+
+        <!-- <div [hidden]="socialMedia.valid || socialMedia.untouched">
+          <div *ngIf="socialMedia.errors && socialMedia.errors.required" class="alert alert-danger error">
+            please enter company name.
+          </div>
+          <div *ngIf="socialMedia.errors && socialMedia.errors.required" class="alert alert-danger error">
+            social media links validated
+          </div>
+        </div> -->
+
+      </div>
+      <br>
+
+      <label for="sel1">Age Group
+        <span class="star">*</span>
+      </label>
+      <select class="form-control formTextbox"  name="targetGroup"   required>
+        <option *ngFor="let agr of ageGroup" >{{agr.ageGroup}}</option>       
+      </select>
+
+      <label>Gender
+        <span class="star">*</span>
+      </label>
+      <select class="form-control formTextbox" name="Age" required>
+        <option *ngFor="let agr of Gender" >{{agr.genderName}}</option>
+      </select>
+
+      <label>Area Of Location:PAN India
+        <span class="star">*</span>
+      </label>
+      <select class="form-control formTextbox" name="location" required>
+        <option *ngFor="let agr of ageofOperation" >{{agr.areaOfOperation}}</option>
+      </select>
+
+    </div>
+  </div>
+</div>
+  <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+  <div class="col-sm-2" ></div>
+</div>
+
+
+
+<h3 class="text-center"style="margin:25px">Point Of Contact </h3>
+
+<div class="container">
+  <div class="col-sm-2"></div>
+  <div class="card" style="background: #e6e6e6;">
+  <div class="row"style="margin-top: 40px">
+    <div class="col-sm-5" style="margin-left: 91px">
+      <div class="form-group">
+        <label for="usr">Name:</label>
+        <span class="star">*</span>
+        <input type="text" class="form-control formTextbox" name="name" [(ngModel)]="companydetails.ContactPOC1Name" pattern="^[a-zA-Z\s]*" required>
+        <!-- <div [hidden]="name.valid || name.untouched">
+          <div *ngIf="name.errors && name.errors.required" class="alert alert-danger error">
+            please enter name.
+          </div>
+
+          <div *ngIf="name.errors && name.errors.pattern" class="alert alert-danger error">
+            only alphabets.
+          </div>
+
+        </div> -->
+      </div>
+
+      <div class="form-group">
+        <label for="usr">Contact No: </label>
+        <span class="star">*</span>
+        <input type="text" class="form-control formTextbox" name="contact" required pattern="[0-9]*" [(ngModel)]="companydetails.ContactPOC1PhoneNumber" minlength="10" maxlength="10" required>
+        <!-- <div [hidden]="contact.valid||contact.untouched">
+          <div *ngIf="contact.errors && contact.errors.required" class="alert alert-danger error">
+            please enter mobile number.
+          </div>
+          <div *ngIf="contact.errors && contact.errors.minlength" class="alert alert-danger error">
+            Mobile Number should be 10 digits.
+          </div>
+        </div> -->
+      </div>
+
+      <h3>Alternative POC</h3>
+
+      <div class="form-group">
+        <label for="usr">Name:
+          <span class="star">*</span>
+        </label>
+        <input type="text" class="form-control formTextbox" name="altname" [(ngModel)]="companydetails.ContactPOC2Name"  required pattern="^[a-zA-Z\s]*" required>
+        <!-- <div [hidden]="altName.valid || altName.untouched">
+          <div *ngIf="altName.errors && altName.errors.required" class="alert alert-danger error">
+            please enter company name.
+          </div>
+          <div *ngIf="altName.errors && altName.errors.pattern" class="alert alert-danger error">
+            Name should be Alphabet.
+          </div>
+        </div> -->
+      </div>
+
+      <div class="form-group">
+        <label for="usr">Contact No:
+          <span class="star">*</span>
+        </label>
+        <input type="text" class="form-control formTextbox" name="altcontact" [(ngModel)]="companydetails.ContactPOC2PhoneNumber"  required pattern="[0-9]*" minlength="10" maxlength="10"  required>
+        <!-- <div [hidden]="altContact.valid || altContact.untouched">
+          <div *ngIf="altContact.errors && altContact.errors.required" class="alert alert-danger error">
+            please enter mobile number
+          </div>
+
+          <div *ngIf="altContact.errors && altContact.errors.pattern" class="alert alert-danger error">
+            Mobile number should be 10 digit
+          </div>
+        </div> -->
+      </div>
+
+      <div class="form-group">
+        <label for="usr">Designation:
+          <span class="star">*</span>
+        </label>
+        <input type="text" class="form-control formTextbox" name="altdesignation"  required pattern="^[a-zA-Z\s]*" [(ngModel)]="companydetails.Designation" required>
+        <!-- <div [hidden]="altDesignation.valid || altDesignation.untouched">
+          <div *ngIf="altDesignation.errors && altDesignation.errors.required" class="alert alert-danger error">
+            please enter Designation.
+          </div>
+
+          <div *ngIf="altDesignation.errors && altDesignation.errors.pattern" class="alert alert-danger error">
+            Designation should be Alphabet
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <div class="form-group">
+        <label for="usr">Download:</label>
+        <input type="text" class="form-control formTextbox">
+      </div>
+
+      <div class="form-group">
+        <label for="usr">Logo:</label>
+
+        <input id="file-inputPhoto" class="inputbox formTextbox" type="file" (change)="uploadFile($)" accept="image/*" />
+
+        <!-- <input id="file-inputPhoto" class="inputbox " type="file" (change)="uploadFile1($event,'image')" accept="image/*" /> -->
+
+      </div>
+
+      <div class="form-group">
+        <label for="usr">Banner:</label>
+
+        <!-- <input id="file-inputPhoto" class="inputbox " type="file" (change)="uploadFile($event,'image')" accept="image/*" /> -->
+
+        <input id="file-inputPhoto" class="inputbox formTextbox" type="file" (change)="uploadFile1()" accept="image/*" />
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+ 
+<button type="submit" class="btn btn-primary"style="margin:25px; margin-left:520px" (click)="UpdateCompanyDetails()" >Submit</button>
+</div>

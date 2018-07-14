@@ -1,0 +1,199 @@
+.cardbox{
+    border:1px solid whitesmoke;
+    box-shadow: 11px 10px 12px -7px grey;
+    margin-top: -22px !important;
+    z-index:10;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.formTextbox{
+    background:  #e6e6e6;
+}
+
+@media only screen and (max-width: 991px)
+{
+    .connect
+
+    {
+        margin-top: 40px;
+    }
+}
+
+
+.black{
+    color: black;
+    padding-left: 3px !important;
+
+}
+.hamberg{
+    margin-top: 16px;
+}
+.containercover{
+    background-color: rgb(138, 134, 134);
+}
+.border{
+   
+    padding-top:10px;
+    margin-bottom:10px;
+}
+.cardbox1{
+   
+    border:1px solid whitesmoke;
+    box-shadow: 11px 10px 12px -7px grey;
+    margin-top:10px;
+    z-index:10;
+    border-radius: 10px;
+
+}
+
+.backgroundimg{
+ background-size:cover;
+ background-repeat: no-repeat;
+ width:100%;
+ padding:0px;
+   
+    z-index:-1;
+}
+.message{
+    width:10%;
+    height:10%;
+}
+.buton{
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(255, 97, 40);
+}
+
+
+.footer{
+	padding-top:20px;
+   }
+   .companylogo{
+    padding-top:20px; 
+   }
+
+   .footer1{
+       background-color: rgb(46, 45, 45);
+   }
+
+   
+   #foot1{ background-color:#262525 ; border-top:6px solid white; }
+
+
+   
+  
+
+   .links{ padding-top:20px; padding-left:20px; font-size:16px; color:white; }
+
+   .comy{padding-top:20px; padding-left:20px;}
+
+  
+
+   .fa {
+    padding: 10px;
+    font-size: 16px !important;
+    width: 38px !important;
+    text-align: center;
+    text-decoration: none;
+   
+    border-radius: 50%;
+}
+   .fa-facebook {
+    background: black;
+    color: white;
+}
+.fa-instagram{
+    background:black;
+    color:white;
+}
+
+.fa-linkedin{
+    background-color:black;
+    color:white;
+}
+
+.fa-youtube{
+    background-color: black;
+    color:white;
+}
+.fa-dribbble{
+    background-color: black;
+    color:white;
+}
+.social{
+    padding-top:10px;
+}
+.textareawidth{
+    width: 100%;
+}
+.olaimage2{
+    border-radius: 50%;
+    border: 2px solid;
+    margin-top: -116px;
+    margin-top: -123px;
+    width: 149px;
+
+
+}
+
+.rowblock{
+    margin-top:10px;
+    margin-top: 0px !important;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 18px;
+    border: 1;
+}
+
+.similar{
+    padding-top: 43px;
+    font-size:20px;
+}
+.para{
+    color:rgb(161, 160, 160);
+}
+.cardbox2{
+
+ border:1px solid whitesmoke;
+ box-shadow: 11px 10px 12px -7px grey;
+ margin-top: -28px;
+border-radius: 10px;
+background-color: white;
+}
+
+.status{
+    margin-left: 20px;
+}
+.logo{
+    color:black;
+}
+
+.navbarheader{
+
+   
+    background-color: white;
+    border-color: snow;
+
+
+}
+
+.ex{ background-repeat: no-repeat; height:850px; background-size: cover; padding-top:20px; } .lin1{ float:right; padding:10px; margin-top:5px; } .lin2{ float:right; padding:10px; } .lin3{ float:right; padding:10px; } .bgcolor1 { background-color:white; height:800px; } .links1 { list-style:none; border-right:1px solid; height:40px; color:gray; } .links4{ list-style:none; border-right:1px solid; height:40px; } .black{ color:black; padding-left:80px; } .lin1{ padding:5px; } .ex .nav{ float:right; } .ex .navbar{ border-bottom:8px solid gray ; padding:20px; } .ex li{ display:inline-block; } .ola{ padding-left:10px; } .ola1{ padding-left:10px; margin-top:-20px; } .ex .glyphicon{ font-size:20px; } .ex .navbar-toggler { background: transparent; border: none; padding:10px; } .ex .menu{ width: 10px; height: 2px; border:2px solid blcak; margin: 2px 0; } .ex .menu1{ width: 8px; height: 1px; margin: 2px 0; border:1px solid #FF5B33; } .links1{ font-size:18px; }
+
+
+
+
+.blackheader{
+    color:black;
+
+}
+.cardspace{
+    margin-top:20px;
+}

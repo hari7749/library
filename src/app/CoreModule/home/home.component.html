@@ -1,0 +1,250 @@
+<topnavbar></topnavbar>
+<main>
+  <div style="background:#00000005">
+    <div class="row">
+      <div class="col-lg-2" style="padding-top: 1%;">
+        <div class="card">
+          <div class="Tilecontainer">
+            <i class="fa fa-sliders" aria-hidden="true"></i>
+            <span style="padding-left: 9px;font-size: 20px;">
+              <b>Filters</b>
+            </span>
+            <div style="border-bottom: 1px solid #ccc;">
+                <div class="filtertitle">
+                    <img src="../../../assets//Images/Sector icon.png" style="width:25px;" class="icon">
+                    <b>Sector </b>
+                  </div>
+              <ul>                
+                  <li *ngFor="let sect of sectors" class="lifont">
+                    <a href=""id="{{sect.id}}" (click)="getCompaniesby_Sector($event)">{{sect.sectorName}}</a>
+                  </li>
+                  <br>
+                </ul>
+            </div>
+            <div style="border-bottom: 1px solid #ccc;">
+                <div class="filtertitle">
+                    <img src="../../../assets//Images/Area of Operation Icon.png" style="width:25px;" class="icon">
+                    <b>Area Of operation </b>
+                  </div>
+              <ul>
+                <li *ngFor="let aop of ageofOperation" class="lifont">
+                  <a href="#" id="{{aop.id}}" (click)="getCompaniesby_AreaOfOperation($event)" >{{aop.areaOfOperation}}</a>
+                </li>
+                <br>
+              </ul>
+            </div>
+            <div style="border-bottom: 1px solid #ccc;">
+                <div class="filtertitle">
+                    <img src="../../../assets//Images/calendar icon.png" style="width:25px;" class="icon">
+                    <b>Age Group</b>
+                  </div>
+              
+              <ul>
+                <li *ngFor="let ag of ageGroup"class=lifont>
+                  <a href="#" id="{{ag.id}}" (click)="getCompaniesby_AgeGroup($event)">{{ag.ageGroup}}</a>
+                </li>
+                <br>
+              </ul>
+            </div>
+            <div style="border-bottom: 1px solid #ccc;">
+                <div class="filtertitle">
+                    <img src="../../../assets//Images/gender.png" style="width:25px;" class="icon">
+                    <b>Gender</b>
+                  </div>
+             
+              <ul>
+                <li *ngFor="let gender of Gender" class="lifont">
+                  <a href="#" id="{{gender.id}}" (click)="getCompaniesby_Gender($event)">{{gender.genderName}}</a>
+                </li>
+                <br>
+              </ul>
+            </div>
+            <div style="border-bottom: 1px solid #ccc;">
+                <div class="filtertitle">
+                    <img src="../../../assets//Images/segment.png" style="width:25px;" class="icon">
+                    <b>Segment</b>
+                  </div>              
+              <ul>
+                <li *ngFor="let seg of segment" class="lifont">
+                  <a href="#" id="{{seg.id}}" (click)="getCompaniesby_Segment($event)" >{{seg.segment}}</a>
+                </li>
+                <br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" style="padding-top: 1%;">
+        <div class="row">
+          <div class="col-lg-4">
+            <label style="font-family: monospace;font-size: 23px">Companies</label>
+          </div>
+          
+          <div class="col-lg-6 ">
+            <input class="form-control searchtextbox" id="searchmain" [(ngModel)]="term" type="search" placeholder="Search" />
+          </div>
+          
+          <div class="col-lg-2">
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-outline-primary sortbutton" id="dropdownforSortby" ngbDropdownToggle>Sort By
+                <i class="fa fa-sort" aria-hidden="true"></i>
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownforSortby">
+                <button class="dropdown-item">Action - 1</button>
+                <button class="dropdown-item">Another Action</button>
+                <button class="dropdown-item">Something else is here</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scrollbar" id="style-2" style="overflow-y:scroll;overflow-x: hidden; height:auto;width:100%; margin-top: 2%;">
+          <div class="row" style="background: #fafafa">
+            <div class="card col-lg-4"   style="max-width: 30%; margin-top: 1%" *ngFor="let company of companies |filter:term">
+              <div class="divimagesize target">
+                <img src="../../../assets/Images/{{company.logo}}" alt="Avatar" style="width:100%">
+              </div>
+              <div class="Tilecontainer target" style="text-align: -webkit-center;">
+                <label>
+                  <b>{{company.companyName}}</b>
+                </label>
+                <p style="font-size: 12px;">{{company.description}}</p>
+                <div>
+                  <button class="btn tagButtons">
+                    <i class="fa fa-window-close-o"></i>{{filtertype}}</button>
+                  <!-- <button class="btn tagButtons">
+                    <i class="fa fa-window-close-o"></i>Transport</button>
+                  <button class="btn tagButtons">
+                    <i class="fa fa-window-close-o"></i>Travel</button>
+                  <button class="btn tagButtons">
+                    <i class="fa fa-window-close-o"></i>Pharma</button>
+                  <button class="btn tagButtons">
+                    <i class="fa fa-window-close-o"></i>Manufracturing</button> -->
+                </div>
+                <div>
+                  <a (click)="knowmore($event)">
+                      <img src="../../../assets/Images/KNOW MORE.png" style="cursor: pointer;" width="80" id="{{company.id}}">
+                  </a>
+                  <a [routerLink]="['/profilepage']">
+                    <img src="../../../assets/Images/CONNECT.png" width="80">
+                  </a>
+                  
+                  <!-- <button class="btn knowmorebutton" id="{{company.id}}" (click)="knowmore($event)" >Know More</button> -->
+                  <!-- <button class="btn Connectbutton" [routerLink]="['/profilepage']">Connect</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3" style="padding-top: 1%;margin-left: -1%;">
+        <div class="row">
+        <div class="card">
+          <div class="row" style="border: 1px solid;margin-left: 1%; width: 98%;">
+            <div class="col-lg-3">
+              <img src="../../../assets/Images//olaimage.png"  width="65" height="25">
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+            <div ngbDropdown class="d-inline-block col-lg-3">
+              <button class="btn btn-outline-primary sortbutton submittab" id="ddlLookingFor" ngbDropdownToggle>Looking fort
+              </button>
+              <div ngbDropdownMenu aria-labelledby="ddlLookingFor">
+                <button class="dropdown-item">Action - 1</button>
+                <button class="dropdown-item">Another Action</button>
+                <button class="dropdown-item">Something else is here</button>
+              </div>
+            </div>
+            <div ngbDropdown class="d-inline-block col-lg-3" style="margin-left: 5%;">
+              <button class="btn btn-outline-primary sortbutton submittab" id="dropdownforSortby" ngbDropdownToggle>Sort By
+                <i class="fa fa-sort" aria-hidden="true"></i>
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownforSortby">
+                <button class="dropdown-item">Action - 1</button>
+                <button class="dropdown-item">Another Action</button>
+                <button class="dropdown-item">Something else is here</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <textarea class="form-control submittabTextArea" placeholder="what you are looking for today?"></textarea>
+          </div>
+          <div class="container" style="margin-left: 63%;width: 39%;">
+            <a>
+              <img src="../../../assets/Images/SUBMIT.png" width="90px"  style="margin-top: -25%;">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 25px;">
+        <div class="card" style="width: 96%;">
+            
+              <div class="row" style="margin-left: 1%; width: 97%;">
+                <div class="col-lg-10">
+                    <img src="../../../assets/Images/Suggestion icon.png"  width="45" height="30">
+                    <label><b>Suggestions</b></label>
+                  
+                </div>
+                <div class="col-lg-2">
+                    <img src="../../../assets/Images/edit_posts.png"  width="30" height="30">
+                </div>
+              </div>
+              <div class="row" style="margin-left: 1%; width: 97%; margin-top: 2px;margin-bottom: 4%;">
+             <input type="search" [(ngModel)]="SuggestionSearch" class="form-control" placeholder="search conversation" >
+            </div>
+            <div class="scrollbar" style="margin-top:1%;border-top: 1px solid;" id="style-2">
+                <div *ngFor="let sug of Suggetions |filter:SuggestionSearch" style="margin-top: 3%;">
+                    <div class="row" style="border-bottom:2px solid aliceblue">
+                      <div class="col-lg-6">
+                          <b><label class="lablestyleForPosts">{{sug.recomandedcompany}} 
+                          <img src="../../../assets/Images/w4.jpg" width="50">
+                          <br> Recomended You <br> {{sug.suggestedcompany}}
+                          <img src="../../../assets/Images/w4.jpg" width="50">
+                        </label>
+                        </b>
+                      </div>
+                      <div class="col-lg-6">
+                          <label class="lablestyleForPosts">{{sug.description}}</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+            </div>
+          </div>   
+        </div> 
+        <div class="row" style="margin-top: 25px;">
+            <div class="card" style="width: 96%;">                
+                  <div class="row" style="margin-left: 1%; width: 97%;">
+                    <div class="col-lg-10">                        
+                        <img src="../../../assets/Images/General posts icon.png"  width="45" height="30">
+                            <label><b>Genaral Posts</b></label>
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="../../../assets/Images/edit_posts.png"  width="30" height="30">
+                        <!-- <img src="../../../assets/Images/General posts icon.png"  width="45" height="30"> -->
+                    </div>
+                  </div>
+                  <div class="row" style="margin-left: 1%; width: 97%; margin-top: 2px;margin-bottom: 4%;">
+                 <input type="search" [(ngModel)]="generalPostSearch" class="form-control" placeholder="search conversation" >
+                </div>
+                <div class="scrollbar" id="style-2" >
+                <div *ngFor="let generalpost of generalposts |filter:generalPostSearch" style="margin-top:1%;border-top: 1px solid;">
+                  <div class="row" style="border-bottom:2px solid aliceblue">
+                    <div class="col-lg-4">
+                      <img src="../../../assets/Images/{{generalpost.logo}}" alt="Avatar" style="width:49%">
+                      <label class="lablestyleForpostCompanynames">{{generalpost.companyName}}</label>
+                      <img src="../../../assets/Images/w4.jpg" alt="Avatar" style="width:50%">
+                    </div>
+                    <div class="col-lg-8">
+                        <label class="lablestyleForPosts">{{generalpost.postDescription}}</label>
+                  </div>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>   
+            </div>     
+      </div>
+    </div>
+  </div>
+</main>

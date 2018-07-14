@@ -1,0 +1,255 @@
+body {
+  padding-bottom: 40px;
+  padding-top: 60px;
+}
+
+
+
+
+.scrollbar {
+  background-color: #ffffff;
+  float: left;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #ffffff;
+}
+
+
+.force-overflow {
+  min-height: 450px;
+}
+
+
+.sidebar-nav-fixed {
+width:14%;
+}
+.tagButtons
+{
+  border: 1px solid white;
+  font-size: 10px;
+}
+.tailbutton
+{
+  border-radius: 12px;
+}
+.knowmorebutton
+{
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #dddddd;
+  color: #060606;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+}
+.Connectbutton
+{
+  background-color: #000000;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tilesContent{
+  align-items: center;
+}
+
+ 
+li:last-child {
+  border: none;
+}
+ 
+li a {
+  text-decoration: none;
+  color: #9e9e9e;
+  display: block;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+li a:hover {
+  color: #000000;
+  font-size: 16px;
+  /* background: #f6f6f6; */
+}
+.filtertitle{
+  border-bottom: 1px solid;
+}
+
+.lablestyleForPosts{
+  font-size: 10px;
+}
+.lablestyleForpostCompanynames
+{
+  font-size: 10px;
+}
+
+.card {
+  margin-left: 1%;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.searchtextbox{
+  border-radius: 25px;
+  background-image: url('../../../assets/Images/search-89.png');
+  background-repeat: no-repeat;
+  text-indent: 20px;
+  background-size: 28px 28px;
+  background-position-x: right;
+}
+input.searchtextbox:focus{
+  background-image:none;
+ }
+
+
+
+.submittabButton{
+  border-radius: 20px;
+  width: 70px;
+  margin-left: 62%;
+  margin-top: 4%;
+  margin-bottom: 3%;
+  background: black;
+  color: #ffffff;
+  height: 38px;
+
+}
+.submittabTextArea{width: 84%;
+  margin-left: 8%;
+  margin-top: 5%;}
+.submittab{
+  
+  height: 33px;
+  font-size: 9px;}
+.sortbutton{
+  /* margin-left: 64%; */
+  background: #eaeaea7a;
+  border-radius: 20px;
+  border-color: white;
+  color: #adadad;
+}
+.divimagesize
+{
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+    /* width: 42px; 
+    height: 42px; */
+ 
+}
+/* Add some padding inside the card container */
+.Tilecontainer {
+  padding: 2px 16px;
+  text-align: -webkit-left;;
+
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  .lifont{
+    font-family: inherit;
+  }
